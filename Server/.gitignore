@@ -1,0 +1,43 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# dotenv files
+.env
+.env.*.local
+
+# Logs
+logs
+*.log
+logs/**/*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Build output
+dist/
+build/
+Client/dist/
+
+# Render platform-related
+.cache/
+*.node
+
+# Optional: if using Firebase or similar
+.firebaserc
+firebase-debug.log
+
+# Optional: if using Next.js (in case someone repurposes the frontend)
+.next/
+out/
+
+# Optional: if using VSCode workspace settings
+*.code-workspace
