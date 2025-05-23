@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "build": "npm install && npm install --prefix Client && npm run build --prefix Client"
+    "build": "npm install && npm install --prefix Client && npm run build --prefix Client",
+    "postinstall": "npm rebuild bcrypt --build-from-source"
   },
   "type": "module",
   "keywords": [],
