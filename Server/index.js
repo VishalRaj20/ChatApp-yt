@@ -48,4 +48,9 @@ const server = app.listen(port, () =>{
 
 setupSocket(server);
 
-mongoose.connect(databaseURL).then(() => console.log("DB connection successfully."))
+mongoose.connect(databaseURL, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+.then(() => console.log("✅ DB connection successful"))
+.catch((err) => console.error("❌ DB connection error:", err));
